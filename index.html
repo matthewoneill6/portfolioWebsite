@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>mftgraphics</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;400;800&display=swap" rel="stylesheet"/>
+    <!-- taken from https://favicon.io/favicon-converter/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="#welcome"><img src="images/mftlogo.jpg" alt="mftgraphics logo"></a>
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#showcase">Posters</a>
+            <a href="#artists">Artist Posters</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div>
+            <a href="https://www.instagram.com/mftgraphics/"><img src="images/instagram.png" alt="Instagram"/></a>
+            <a href="https://www.tiktok.com/@mftgraphics"><img src="images/tiktok.png" alt="TikTok"/></a>
+        </div>
+    </header>
+    <main>
+        <!-- I'm using "display: none" here and in the duplicate of the carousels (lines 106 and 136) as these would confuse the readability if the css wasn't attached (or for reading mode), so I overwrite them with the "display: flex !important" once css sheet loads -->
+        <section id="welcome" style="display: none;">
+            <p>Wanna see the animation again? Hover here and see what happens... </p>
+            <span>mftgraphics.</span>
+        </section>
+        <section id="about" class="linear">
+            <img src="images/me.jpg" alt="Person in a suit holding a stack of wedding booklets">
+            <section>
+                <p>Welcome</p>
+                <h1>About Me</h1>
+                <p>Welcome to my portfolio. Here you can see a collection of all of the posters that I have made. Everything you see here is fully my own original work, inspired by the music that it's made for. If you want to learn more about the start of all this, click the button below.</p>
+                <a href="about.html">Learn More &gt;</a>
+            </section>
+        </section>
+        <section id="showcase">
+            <p>Featured Series</p>
+            <h1>Album Posters</h1>
+            <a href="albums.html">Discover &gt;</a>
+            <section>
+                <figure>
+                    <img src="images/domfike.jpg" alt="Poster for Dominic Fike's album Sunburn"/>
+                    <figcaption>
+                        <a href="albums.html#dominic"></a>
+                        <p>Dominic Fike</p>
+                        <h2>Sunburn</h2>
+                        <p>Capturing Fike's formative years growing up in Florida's warmth.</p>
+                        <p>Credits to <a href="https://unsplash.com/photos/two-people-stand-in-the-sparkling-ocean-KM_2rd1Psxg">Marko Brečić</a> for the original image.</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="images/lucafogale.jpg" alt="Poster for Luca Fogale's album Run Where The Light Calls"/>
+                        <figcaption>
+                            <a href="albums.html#luca"></a>
+                            <p>Luca Fogale</p>
+                            <h2>Run Where The Light Calls</h2>
+                            <p>A quiet composition for a calm & centered album, with a lot of detail.</p>
+                            <p>Credits to <a href="https://unsplash.com/photos/a-person-standing-on-top-of-a-hill-at-sunset-ZUPZvF00m8o">Jackson Conner</a> for the original image.</p>
+                        </figcaption>    
+                </figure>
+                <figure>
+                    <img src="images/noahkahan.jpg" alt="Poster for Noah Kahan's album Stick Season"/>
+                    <figcaption>
+                        <a href="albums.html#noah"></a>
+                        <p>Noah Kahan</p>
+                        <h2>Stick Season</h2>
+                        <p>Featuring Vermont's church as the focus, a symbol of his hometown.</p>
+                        <p>Credits to <a href="https://unsplash.com/photos/a-church-in-the-middle-of-a-field-with-a-mountain-in-the-background-G_x1vwGRUbo">Sadia Afreen</a> for the original image.</p>
+                    </figcaption>                
+                </figure>
+                <figure>
+                    <img src="images/searows.jpg" alt="Poster for Searows' album Guard Dog"/>
+                    <figcaption>
+                        <a href="albums.html#searows"></a>
+                        <p>Searows</p>
+                        <h2>Guard Dog</h2>
+                          <p>A blue scheme to reflect the album's cover, with the dog imagery.</p>
+                        <p>Credits to <a href="https://unsplash.com/photos/black-wooden-house-on-brown-grass-field-during-daytime-xFirZSC7hA4">Steven Cordes</a> for the original image.</p>
+                    </figcaption>                
+                </figure>
+            </section>
+        </section>
+        <section id="artists">
+            <p>Featured Series</p>
+            <h1>Artist Collections</h1>
+            <section class="carousel">
+                <ul>
+                    <li>Raye</li>
+                    <li>Olivia Dean</li>
+                    <li>Kingfishr</li>
+                    <li>Luca Fogale</li>
+                    <li>Searows</li>
+                    <li>Noah Kahan</li>
+                    <li>Gigi Perez</li>
+                    <li>Joshua Slone</li>
+                    <li>Dominic Fike</li>
+                    <li>The Favors</li>
+                    <li>Khamari</li>
+                    <li>Jake Minch</li>
+                </ul>
+                <ul style="display: none;">
+                    <li>Raye</li>
+                    <li>Olivia Dean</li>
+                    <li>Kingfishr</li>
+                    <li>Luca Fogale</li>
+                    <li>Searows</li>
+                    <li>Noah Kahan</li>
+                    <li>Gigi Perez</li>
+                    <li>Joshua Slone</li>
+                    <li>Dominic Fike</li>
+                    <li>The Favors</li>
+                    <li>Khamari</li>
+                    <li>Jake Minch</li>
+                </ul>
+            </section>
+            <section class="carousel">
+                <ul>
+                    <li>Lucky Daye</li>
+                    <li>Kendrick Lamar</li>
+                    <li>Tyler, The Creator</li>
+                    <li>Yana</li>
+                    <li>Sam Fender</li>
+                    <li>Wunderhorse</li>
+                    <li>Tiny Habits</li>
+                    <li>Dijon</li>
+                    <li>Malcolm Todd</li>
+                    <li>Frank Ocean</li>
+                    <li>Mumford & Sons</li>
+                    <li>Zach Bryan</li>
+                </ul>
+                <ul style="display: none;">
+                    <li>Lucky Daye</li>
+                    <li>Kendrick Lamar</li>
+                    <li>Tyler, The Creator</li>
+                    <li>Yana</li>
+                    <li>Sam Fender</li>
+                    <li>Wunderhorse</li>
+                    <li>Tiny Habits</li>
+                    <li>Dijon</li>
+                    <li>Malcolm Todd</li>
+                    <li>Frank Ocean</li>
+                    <li>Mumford & Sons</li>
+                    <li>Zach Bryan</li>
+                </ul>
+            </section>
+        </section>
+        <article class="linear">
+            <img class="kingfishr" src="images/kingfishr1.jpg" alt="Poster for Kingfishr's Halcyon 2025 Tour">
+            <section>
+                <p>Kingfishr</p>
+                <h1>Halcyon Tour 2025</h1>
+                <p>I've seen Kingfishr live four times by now. It's always a good show. To see them grow from playing Cyprus Avenue to a few hundred people a couple years back to selling out multiple nights in the 3Arena has been really impressive. They've really done well for themselves, most recently touring America. It's always been a goal of mine to design for them one day.</p>
+                <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/4P1BBeZSJSknyrfkLbD2Ab?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>For this poster, I took a frame from their <a href="https://youtu.be/5BqVicfxDsA?si=ddyb91AprsxjpkMT">Kingfishr - The Road To Dublin (Mini Documentary)</a>, about their 3Olympia show that I went to back in 2024. I specifically used <a href="https://youtu.be/5BqVicfxDsA?si=sCTDXPy6LmOETlXf&t=974">this frame</a> from it.</p>
+            </section>
+        </article>
+        <article class="linear">
+            <img class="raye" src="images/rayefestival1.jpg" alt="Poster for Raye's Montreux Jazz Festival set">
+            <section>
+                <p>Raye</p>
+                <h1>Montreux Jazz Festival</h1>
+                <p>A set of concept posters for RAYE's performance at the Montreux Jazz Festival during her 2025 festival tour. I got to see her live back in August at Royal Hospital Kilmainham, Dublin. I doubt any other concert will top that night, she can give a performance. You can listen to her 2024 set at Montreux below. </p>     
+                <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/0uqyhvc8HEyztLSTE8RKmx?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>     
+                <p>Credits to <a href="https://shirleymichael.ch/">Shirley Michael</a>, from <a href="https://www.loadsofmusic.com/2025/07/raye-Montreux-jazz-2025/">Loads of Music</a> for the incredible photography featured in these posters.</p>
+            </section>
+        </article>
+        <article class="linear">
+            <img class="sam" src="images/littlebit1.jpg" alt="Poster for Sam Fender's Little Bit Closer music video">
+            <section>
+                <p>Sam Fender</p>
+                <h1>Little Bit Closer</h1>
+                <p>A few posters I made using still frames from Sam Fender's music video for <a href="https://youtu.be/a6WX-kuzKos?si=SUc3uVKtubJ-ytmK">Little Bit Closer</a>. It stars Owen Cooper and is directed by Phillip Barantini, who both worked famously on Netflix's "Adolescence".</p>
+                <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/4gwfCCNRxAB1P62hlDCelM?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p>I specifically used <a href="https://youtu.be/a6WX-kuzKos?si=wJDHo4r2BknnJx1m&t=105">this frame</a>, <a href="https://youtu.be/a6WX-kuzKos?si=mXsqrHYmZr0J5zV5&t=85">this frame</a>, and <a href="https://youtu.be/a6WX-kuzKos?si=-__212Eci_IuQ4RA&t=80">this frame</a> respectively. I'll let you figure out which shot is which poster.</p>
+            </section>
+        </article>
+        <article class="linear">
+            <img class="olivia" src="images/olivia1.jpg" alt="Poster for Olivia Dean's The Art of Loving Tour">
+            <section>
+                <p>Olivia Dean</p>
+                <h1>The Art Of Loving</h1>
+                <p>A collection for Olivia Dean's upcoming tour for her new album The Art of Loving. Really good album, as was her last one, Messy, and she's really been doing well this year so far.</p>
+                <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/0l8zYqoUeBYg47Gmevq9HZ?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            
+            </section>
+        </article>
+        <article class="linear">
+            <img class="wunderhorse" src="images/wunderhorse1.jpg" alt="Poster for Wunderhorse's UK Tour">
+            <section>
+                <p>Wunderhorse</p>
+                <h1>European & UK Tour 2025</h1>
+                <p>Got to see them support Sam Fender in the 3Arena back in December '24. It was a really good set, even though I hadn't listened to them much before the concert.</p>
+                <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/1QNeya5YNW3oiuUi7B54y7?utm_source=generator" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+        </article>
+        <aside id="contact">
+            <a href="#home"></a> <!-- using this as the side tab for when it appears on landscape screens, but for portrait it isn't necessary so it stays empty. also it acts as a hover tab until the nav contact is clicked and it's needed to be a "close" button -->
+            <section>
+                <section>
+                    <h1>Get in Touch</h1>
+                    <p>Ask about any enquiries below.</p>
+                </section>
+                <section>
+                    <h2>Email</h2>
+                    <p><a href="mailto:mftgraphics0@gmail.com">mftgraphics0@gmail.com</a></p>
+                </section>
+                <section>
+                    <h2>Instagram</h2>
+                    <p><a href="https://www.instagram.com/mftgraphics/">@mftgraphics</a></p>
+                </section>
+                <section>
+                    <h2>TikTok</h2>
+                    <p><a href="https://www.tiktok.com/@mftgraphics/">@mftgraphics</a></p>
+                </section>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>© 2025 Matthew O'Neill / mftgraphics. All Rights Reserved</p>
+        <p>All <strong>concept</strong> artwork is the original work of Matthew O'Neill and is in no way affiliated with any featured artist or their management</p>
+    </footer>
+</body>
+</html>
